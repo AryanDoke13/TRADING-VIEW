@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+   background: url("DFG.jpg");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: darkgray;
+    border-radius: 8px;
+    padding: 40px;      /* a bit more padding */
+    width: 600px;       /* increased from 350px */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+.container {
+    background: darkgray;
+    border-radius: 8px;
+    padding: 40px;
+    width: 80%;          /* takes 80% of screen width */
+    max-width: 700px;    /* but won’t stretch beyond 700px */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: dimgray;
+    color: lightgray;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: darkgray;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: darkcyan;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: teal;
+}
+
+.error {
+    color: crimson;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dashboard {
+    display: none;
+}
+
+.balance {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.coins {
+    margin-top: 20px;
+}
+
+.coin {
+    background: darkslategray;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.coin button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background: dodgerblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.coin button:hover {
+    background: royalblue;
+}
+
+.coin-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.coin-image img {
+    max-width: 200px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+/* Container for scrolling effect */
+.scroll-container {
+  height: 150px;   /* visible height */
+  overflow: hidden;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Animate table rows */
+.scroll-container table {
+  border-collapse: collapse;
+  width: 100%;
+  animation: scrollUp 10s linear infinite;
+}
+
+.scroll-container th, .scroll-container td {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+}
+
+.profit { color: lightgreen; font-weight: bold; }
+.loss { color: red; font-weight: bold; }
+
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
